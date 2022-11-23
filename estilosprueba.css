@@ -1,0 +1,54 @@
+
+body {
+    width: 100vw;
+    height: 129rem;
+    background-color: brown;
+    margin: 0rem;
+
+}
+
+nav {
+    border: 1px solid black;
+    width: 100%;
+    height: 8.375rem;
+    background-color: aqua;
+}
+
+#carrusel {
+    border: 1px solid black;
+    width:  100%;
+    height: 25.75rem;
+    background-color: blue;
+
+
+}
+
+
+#presentación {
+    border: 1px solid black;
+    background-color: blueviolet;
+    width: 100%;
+    height: 35.6875rem;
+
+}
+
+#servicios {
+    border: 1px solid black;
+    width: 100%;
+    height: 28rem;
+    background-color: darkcyan;
+}
+
+#equipoReseñas {
+    border: 1px solid black;
+    width: 100%;
+    height: 23.125rem;
+    background-color: black;
+}
+
+footer{
+    border: 1px solid black;
+    width: 100%;
+    height: 8.5625rem;
+    background-color: crimson;
+}
