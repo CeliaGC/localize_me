@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    border: none;
+    outline: none;
+}
+
+body{
+    height: 129.125rem;
+    width: 100vw;
+    background-color: lightseagreen;
+}
+
+nav{
+    height: 8.375rem;
+    width: 100%;
+    background-color: lightblue;
+}
+
+#carrusel{
+    height:25.75rem;
+    width: 100%;
+    background-color: lightgreen;
+}
+
+#presentación{
+    height: 35.3125rem;
+    width: 100%;
+    background-color: lightpink;
+}
+
+#servicios{
+    height: 28rem;
+    width: 100%;
+    background-color: lightgray;
+}
+
+#equipoReseñas{
+    height: 23.125rem;
+    width: 100%;
+    background-color: lightgoldenrodyellow;
+}
+
+footer{
+    height: 8.5625rem;
+    width: 100%;
+    background-color: lightskyblue;
+}
