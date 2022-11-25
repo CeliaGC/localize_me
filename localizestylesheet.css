@@ -1,3 +1,10 @@
+@font-face {
+    font-family:'Fredoka One';
+    src: url(./fuentes/Fredoka_One/FredokaOne-Regular.ttf) format(truetype);
+    font-style: normal;
+    font-weight: normal;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -8,16 +15,103 @@
 }
 
 body{
-    height: 129.125rem;
-    width: 100vw;
+    width: 100%;
     background-color: lightseagreen;
 }
 
+/*Aquí empieza los estilos del navegador*/
 nav{
     height: 8.375rem;
     width: 100%;
-    background-color: lightblue;
+    background-color: #9ED8DB;
+    
 }
+
+#marcoNavegador{
+    position: absolute;
+    width: 1400px;
+    height: 85px;
+    margin-left: 52px;
+    margin-top: 21px;
+    
+    background: #E9FFF9;
+    display: flex;
+    flex-direction: row;
+    
+}
+
+#logoNavegador{
+    margin-top: .625rem;
+    margin-left: .625rem;
+    margin-bottom: .625rem;
+}
+
+.botonNavegador1{
+    width: 188px;
+    height: 66px;
+    background-color: transparent;
+    border: 3px solid #1D3354;
+    border-radius: 10px; 
+    font-family:'Fredoka One';
+    color: #1D3354;
+    text-align: center;
+    margin-top: .375rem;
+    margin-left: 12.5rem
+}
+
+.botonNavegador2{
+    width: 188px;
+    height: 66px;
+    background-color: transparent;
+    border: 3px solid #1D3354;
+    border-radius: 10px; 
+    font-family:'Fredoka One';
+    color: #1D3354;
+    text-align: center;
+    margin-top: .375rem;
+    margin-left: .625rem
+}
+
+.botonNavegador3{
+    width: 28.125rem;
+    height: 66px;
+    background-color: transparent;
+    border: 3px solid #1D3354;
+    border-radius: 10px; 
+    font-family:'Fredoka One';
+    color: #1D3354;
+    text-align: center;
+    margin-top: .375rem;
+    margin-left: .625rem;
+    margin-right: .3125rem;
+    display: flex;
+    flex-direction: row;
+    
+}
+
+#imagenBarraBusqueda{
+    height: 4.0625rem;
+    width: 4.0625rem;
+    margin-left: 18.75rem;
+    background-image: url(./archivos/iconos/icons8-búsqueda-64.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.textoNavegador{
+    margin-top: .125rem;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+#contactoNavegador{
+    margin-top: .9375rem;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+
+/*Aquí terminan los estilos del navegador*/
 
 #carrusel{
     height:25.75rem;
