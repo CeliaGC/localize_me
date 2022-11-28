@@ -24,20 +24,18 @@ nav{
     height: 8.375rem;
     width: 100%;
     background-color: #9ED8DB;
-    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
 #marcoNavegador{
-    position: absolute;
-    width: 1400px;
-    height: 85px;
-    margin-left: 52px;
-    margin-top: 21px;
-    
+    width: 87.5rem;
+    height: 5.3125rem;
+    margin-top: 1.25rem;
     background: #E9FFF9;
     display: flex;
     flex-direction: row;
-    
 }
 
 #logoNavegador{
@@ -47,11 +45,11 @@ nav{
 }
 
 .botonNavegador1{
-    width: 188px;
-    height: 66px;
+    width: 11.75rem;
+    height: 4.125rem;
     background-color: transparent;
-    border: 3px solid #1D3354;
-    border-radius: 10px; 
+    border: .1875rem solid #1D3354;
+    border-radius: .625rem; 
     font-family:'Fredoka One';
     color: #1D3354;
     text-align: center;
@@ -60,11 +58,11 @@ nav{
 }
 
 .botonNavegador2{
-    width: 188px;
-    height: 66px;
+    width: 11.75rem;
+    height: 4.125rem;
     background-color: transparent;
-    border: 3px solid #1D3354;
-    border-radius: 10px; 
+    border: .1875rem solid #1D3354;
+    border-radius: .625rem; 
     font-family:'Fredoka One';
     color: #1D3354;
     text-align: center;
@@ -74,10 +72,10 @@ nav{
 
 .botonNavegador3{
     width: 28.125rem;
-    height: 66px;
+    height: 4.125rem;
     background-color: transparent;
-    border: 3px solid #1D3354;
-    border-radius: 10px; 
+    border: .1875rem solid #1D3354;
+    border-radius: .625rem; 
     font-family:'Fredoka One';
     color: #1D3354;
     text-align: center;
@@ -119,7 +117,7 @@ nav{
     background-color: lightgreen;
 }
 
-#presentación{
+#presentacion{
     height: 35.3125rem;
     width: 100%;
     background-color: lightpink;
@@ -131,11 +129,76 @@ nav{
     background-color: lightgray;
 }
 
+/*Aquí empieza la parte de equipo/reseñas*/
 #equipoReseñas{
     height: 23.125rem;
     width: 100%;
     background-color: lightgoldenrodyellow;
+    display: flex;
+    flex-direction: column nowrap;
 }
+
+#quienesSomosContenedor{
+    width: 50%;
+    height: 23.125rem;
+    background-color: #FF6469;
+}
+#quienesSomosTitulo{
+    width: 100%%;
+    height: 3.5rem;
+    background-color: #9ED8DB;
+}
+
+#quienesSomosH3{
+    font-family: 'Fredoka One';
+    font-size: 1.875rem;
+    color: #1d3354;
+    text-align: center;
+    padding-top: .625rem
+}
+
+#quienesSomosCaja{
+    width: 100%;
+    height: 19.625rem;
+    display: flex;
+    flex-direction: row nowrap;
+    justify-content: space-evenly;
+}
+
+.quieneSomosCajaColumna{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.quienesSomosPersona{
+    width: 19.3125rem ;
+    height: 8.375rem;
+    background-color: white;
+    border-radius: .625rem;
+
+}
+
+#resenasContenedor{
+    width: 50%;
+    height: 23.125rem;
+    background-color: #FF6469;
+}
+#resenasCaja{
+    width: 100%%;
+    height: 3.5rem;
+    background-color: #9ED8DB;
+}
+
+#resenasTitulo{
+    font-family: 'Fredoka One';
+    font-size: 1.875rem;
+    color: #1d3354;
+    text-align: center;
+    padding-top: .625rem
+}
+
+/*Aqui acaba equipo/reseñas*/
 
 footer{
     height: 8.5625rem;
