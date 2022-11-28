@@ -124,9 +124,13 @@ nav{
     background-color: lightgreen;
 }
 
+/* Aquí comienzan los estilos de la presentación */
+
 #presentación{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 1fr 1fr 1fr;
     height: 35.3125rem;
-    width: vw;
     background-color: rgb(255, 255, 255);
     padding: 0%;
     
@@ -134,15 +138,13 @@ nav{
 
 #globo {
     background-image:url("archivos/Logos/logo\ proyecto.png");
-    background-size: 55%;
+    background-size: 70%;
     background-repeat: no-repeat;
     grid-row-start: 1;
     grid-row-end: 4;
     background-position: center;
-}
-
-.padding {
-    padding-left: 10%;
+    margin-bottom: 5%;
+    margin-left: 15%;
 }
 
 #somos {
@@ -150,8 +152,8 @@ nav{
     color:#467599;
     font-family: 'Inria Sans';
     font-size: 3rem;
-   text-: center;
-    justify-content: left;
+    text-justify: right;
+    padding: 0%;
     
     
 }
@@ -178,12 +180,14 @@ nav{
     font-family: 'Inria Sans';
     font-size: 3rem;
     text-align: right;
-    padding-left: 15%;
+    padding: 0%;
+    margin-right: 10%;
 }
 
 
 
 /* aquí terminan los estilos de la presentación */
+
     
 
 #servicios{
