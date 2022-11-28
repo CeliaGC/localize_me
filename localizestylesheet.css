@@ -5,6 +5,13 @@
     font-weight: normal;
 }
 
+@font-face {
+    font-family: 'Inria Sans';
+    src: url(./fuentes/Inria_Sans/InriaSans-Regular.ttf);
+    font-style: normal;
+    font-weight: normal;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -119,11 +126,72 @@ nav{
     background-color: lightgreen;
 }
 
+/* Aquí comienzan los estilos de la presentación */
+
 #presentación{
+    display: grid;
+    grid-template-columns: 1fr 2.5fr;
+    grid-template-rows: 1fr 1fr 1fr;
     height: 35.3125rem;
-    width: 100%;
-    background-color: lightpink;
+    width: vw;
+    background-color: rgb(255, 255, 255);
+    padding: 0%;
+    
 }
+
+#globo {
+    background-image:url("archivos/Logos/logo\ proyecto.png");
+    background-size: 55%;
+    background-repeat: no-repeat;
+    grid-row-start: 1;
+    grid-row-end: 4;
+    background-position: center;
+}
+
+.padding {
+    padding-left: 10%;
+}
+
+#somos {
+    background-color: white;
+    color:#467599;
+    font-family: 'Inria Sans';
+    font-size: 3rem;
+   text-: center;
+    justify-content: left;
+    
+    
+}
+
+#somosA {
+    padding-top: 3%;
+}
+
+#somosB {
+    padding-left: 15%;
+}
+
+#nuestraMeta {
+    background-color: white;
+    color:#467599;
+    font-family: 'Inria Sans';
+    font-size: 2.5625rem;
+    text-align: center;
+}
+
+#diseñamos {
+    background-color: white;
+    color:#467599;
+    font-family: 'Inria Sans';
+    font-size: 3rem;
+    text-align: right;
+    padding-left: 15%;
+}
+
+
+
+/* aquí terminan los estilos de la presentación */
+    
 
 #servicios{
     height: 28rem;
