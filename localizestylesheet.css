@@ -57,7 +57,7 @@ body{
 #navegador li{
     font-family:'Fredoka One';
     text-align: center;
-    font-size: 1.5625rem;
+    font-size: 1.375rem;
 }
 
 #navegador li a{
@@ -250,6 +250,47 @@ img {
     margin-right: 1.875rem;
 }
 
+#servicios{
+    height: 28rem;
+    width: 100%;
+    background-color: #E9FFF9;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+}
+
+.cajaServicios{
+    width: 25%;
+    height: 28rem;
+    margin-top: 1.25rem;
+    margin-left: 3.125rem;
+    text-align: left;
+}
+
+.cajaServicios h2{
+    margin-left: .4375rem;
+}
+
+.cajaServicios p{
+    margin-left: .4375rem;
+}
+
+img {
+    height: auto;
+    max-width: 100%;  
+    position: flex;
+}
+
+.servicio {
+    font-family:'Inria Sans', sans-serif;
+    font-size: 1.5rem;
+}
+
+.comentario {
+    font-family:'Inria Sans', sans-serif;
+    font-size: 1.4375rem;
+    margin-right: 1.875rem;
+}
 /*Aquí empieza la parte de equipo/reseñas*/
 #equipoResenas{
     display: flex;
