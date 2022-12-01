@@ -24,6 +24,7 @@
 body{
     width: 100%;
     background-color: lightseagreen;
+    height: 132.375rem;
 }
 
 /*Aquí empieza los estilos del navegador*/
@@ -59,6 +60,7 @@ body{
     text-align: center;
     font-size: 1.375rem;
 }
+
 
 #navegador li a{
     text-decoration: none;
@@ -155,7 +157,7 @@ top:5.3125rem;
     display: grid;
     grid-template-columns: 1fr 3fr;
     grid-template-rows: 1fr 1fr 1fr;
-    height: 35.3125rem;
+    height: 39rem;
     background-color: rgb(255, 255, 255);
     padding: 0%;
     
@@ -397,6 +399,7 @@ img {
     height: 23.125rem;
     background-color: #FF6469;
 }
+
 #resenasCaja{
     width: 100%;
     height: 3.5rem;
@@ -410,7 +413,57 @@ img {
     text-align: center;
     padding-top: .625rem;
 }
-/*Aqui acaba equipo/reseña*/
+
+#quienesSomosH3{
+    font-family: 'Fredoka One';
+    font-size: 1.875rem;
+    color: #1d3354;
+    text-align: center;
+    padding-top: .625rem
+}
+
+#quienesSomosCaja{
+    width: 100%;
+    height: 19.625rem;
+    display: flex;
+    flex-direction: row nowrap;
+    justify-content: space-evenly;
+}
+
+.quieneSomosCajaColumna{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.resenaCajaComentario{
+    width: 19.3125rem ;
+    height: 8.375rem;
+    background-color: white;
+    border-radius: .625rem;
+    display: flex;
+    flex: row reverse;
+    font-family: 'Inria Sans';
+}
+
+.resenaPersona p{
+    font-family: 'Inria Sans';
+    color: #1D3354;
+    font-size: 1.375rem;
+    flex-direction: column;
+    align-self: center;
+    flex-wrap: wrap ;
+    margin-left: .9375rem;
+}
+
+.medalla{
+    display: inline-block;
+    flex-direction: column;
+    padding: .3125rem;
+    margin-top: .3125rem;
+    margin-left: .3125rem;
+}
+/*Aqui acaba equipo/resena*/
 
 /*Aqui empieza el footer*/
 footer{
@@ -478,14 +531,17 @@ footer{
 }
 .item-3{
     background-color: #1D3354;
-    width: 33%;
+    width: 32.3125rem;
     height :100%;
     display: grid;
     grid-template-columns: 15% 85%;
     grid-template-rows: 40% 20% 40%;
+
 }
+
 .caja9{
     grid-column: 1/3;
+    padding-right: 45%;
 }
 .caja10{
     grid-row: 2/4;
@@ -528,4 +584,174 @@ footer{
     font-family: 'Inria Sans';
 }
 
-/*Aquí empieza el @media para tamaño movil*/
+@media (max-width: 22.5rem) {
+
+    * {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        text-decoration: none;
+        border: none;
+        outline: none;
+    }
+
+    body {
+        width: 22.5rem;
+        height: 100rem;
+    }
+
+/* Aqui empieza el navegador mobile */
+
+    nav {
+        width: 22.5rem;
+        height: 73px;
+    }
+
+    #marcoNavegador{
+        width: 22.5rem;
+        height: 4.5625rem;
+        background: #E9FFF9;
+        display: flex;
+        flex-direction: row;
+    }
+
+    #logoNavegador{
+        width: 9.9375rem;
+        height: 2.0625rem;
+    }
+
+    .botonNavegador1{
+        width: 0;
+        height: 0;
+  
+    }
+    
+    .botonNavegador2{
+        width: 0;
+        height: 0;
+      
+    }
+    
+    .botonNavegador3{
+        width: 0;
+        height: 0;
+      
+    }
+    
+    #imagenBarraBusqueda{
+        width: 0;
+        height: 0;
+      
+    }
+    
+    .textoNavegador{
+        width: 0;
+        height: 0;
+      
+    }
+    
+    #contactoNavegador{
+        width: 0;
+        height: 0;
+      
+    }
+/* Aqui acaba el navegador mobile */
+
+/* Aqui empieza el carrusel mobile */
+    #carrusel {
+        width: 22.5rem;
+        height: 6.5625rem;
+    }
+
+/* Aqui acaba el carrusel mobile */
+
+/* Aquí empieza la presentacion mobile */
+#presentacion {
+    height: 19.4375rem;
+    width: 22.5rem;
+    display: flex;
+    flex-direction: column;
+    background-color:#ffffff;
+    justify-content: center;
+    align-content: center;
+    position:relative
+}
+
+#globo {
+    height: 14.4375rem;
+    width: 6.5rem;
+    position: absolute;
+    background-image: url('archivos/Logos/logo\ proyecto.png');
+    background-size: 97%;
+    background-repeat: no-repeat;
+    bottom: 0%;
+    right: 0%;
+    margin:0%;
+    background-position: bottom;
+    opacity: 0.4;
+
+}
+
+#somos {
+    width: 22.5rem;
+    height: 25%;
+    background-color: rgba(255, 255, 255, 0);
+    color:#467599;
+    font-family: 'Inria Sans';
+    font-size: 1.125rem;
+    text-justify: auto;
+    text-align: center;
+    margin-top: 10%;
+}
+
+#somosB {
+    margin-right: 15%;
+}
+
+#nuestraMeta {
+    width: 22.5rem;
+    height: 50%;
+    background-color: rgba(255, 255, 255, 0);
+    color:#467599;
+    font-family: 'Inria Sans';
+    font-size: 1rem;
+    text-justify: auto;
+    text-align: center;
+    margin-top: 15%;
+}
+
+#disenamos {
+    width: 22.5rem;
+    height: 25%;
+    background-color: rgba(255, 255, 255, 0);
+    color:#467599;
+    font-family: 'Inria Sans';
+    font-size: 1.125rem;
+    text-align: center;
+    text-justify: auto;
+ 
+}
+
+/* Aqui acaba la presentacion mobile */
+
+    #servicios {
+        width: 22.5rem;
+        height: 38.1875rem;
+    }
+
+    #equipoResenas {
+        width: 22.5rem;
+        height: 20.625rem;
+    }
+
+    footer {
+        width: 22.5rem;
+        background-color:coral;
+        height: 11.5rem;
+        display: grid;
+        grid-template-rows: 1fr 2fr 2fr;
+        grid-template-columns: 1fr 1fr;
+        border: 1px solid black;
+    }
+
+}
