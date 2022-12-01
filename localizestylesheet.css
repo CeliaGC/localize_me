@@ -27,95 +27,121 @@ body{
 }
 
 /*Aquí empieza los estilos del navegador*/
-nav{
+#navegador{
     height: 8.375rem;
     width: 100%;
     background-color: #9ED8DB;
     display: flex;
     flex-direction: row;
+    align-items: center;
     justify-content: center;
 }
 
 #marcoNavegador{
-    width: 87.5rem;
+    width: 90%;
     height: 5.3125rem;
-    margin-top: 1.25rem;
     background: #E9FFF9;
     display: flex;
     flex-direction: row;
+    align-self: center;
 }
 
 #logoNavegador{
-    margin-top: .625rem;
-    margin-left: .625rem;
-    margin-bottom: .625rem;
+    padding: 10%;
 }
 
-.botonNavegador1{
+#navegador ul{
+    list-style-type: none;
+}
+
+#navegador li{
+    font-family:'Fredoka One';
+    text-align: center;
+    font-size: 1.5625rem;
+}
+
+#navegador li a{
+    text-decoration: none;
+    display: block;
+    color: #1D3354;
+}
+
+#navegador li a:hover{
+    color: white;
+}
+
+#botonNavegador1{
     width: 11.75rem;
     height: 4.125rem;
     background-color: transparent;
     border: .1875rem solid #1D3354;
     border-radius: .625rem; 
     font-family:'Fredoka One';
-    color: #1D3354;
     text-align: center;
     margin-top: .375rem;
-    margin-left: 12.5rem
+    margin-left: 12.5rem;
+}
+
+#botonNavegador1:hover{
+background-color: #FF6469;
+color: #ffffff;
+
 }
 
 .botonNavegador2{
-    width: 11.75rem;
-    height: 4.125rem;
-    background-color: transparent;
-    border: .1875rem solid #1D3354;
-    border-radius: .625rem; 
-    font-family:'Fredoka One';
-    color: #1D3354;
-    text-align: center;
-    margin-top: .375rem;
-    margin-left: .625rem
+width: 11.75rem;
+height: 4.125rem;
+background-color: transparent;
+border: .1875rem solid #1D3354;
+border-radius: .625rem; 
+font-family:'Fredoka One';
+text-align: center;
+margin-top: .375rem;
+margin-left: .625rem;
 }
 
-.botonNavegador3{
-    width: 28.125rem;
-    height: 4.125rem;
-    background-color: transparent;
-    border: .1875rem solid #1D3354;
-    border-radius: .625rem; 
-    font-family:'Fredoka One';
-    color: #1D3354;
-    text-align: center;
-    margin-top: .375rem;
-    margin-left: .625rem;
-    margin-right: .3125rem;
-    display: flex;
-    flex-direction: row;
-    
+#contacto{
+margin-top: .8125rem;
 }
 
-#imagenBarraBusqueda{
-    height: 4.0625rem;
-    width: 4.0625rem;
-    margin-left: 18.75rem;
-    background-image: url(./archivos/iconos/icons8-búsqueda-64.png);
-    background-size: cover;
-    background-position: center;
+.botonNavegador2:hover{
+background-color: #FF6469;
+color: #ffffff;
 }
 
-.textoNavegador{
-    margin-top: .125rem;
-    font-size: 1.5rem;
-    text-align: center;
+#botonNavegador3{
+width: 28.125rem;
+height: 4.125rem;
+background-color: transparent;
+border: .1875rem solid #1D3354;
+border-radius: .625rem; 
+font-family:'Fredoka One';
+color: #1D3354;
+text-align: center;
+margin-top: .375rem;
+margin-left: .625rem;
+margin-right: .3125rem;
+display: flex;
+flex-direction: row;
 }
 
-#contactoNavegador{
-    margin-top: .9375rem;
-    font-size: 1.5rem;
-    text-align: center;
+#botonNavegador3:hover{
+background-color: #FF6469;
+color: #ffffff;
+display: block;
+
 }
 
+.btnMenu{
+height: 1.25rem ;
+width: 1.25rem;
+cursor: pointer;
+display: none;
+}
 
+ul.show{
+top:5.3125rem;
+}
 /*Aquí terminan los estilos del navegador*/
 
 #carrusel{
@@ -125,7 +151,6 @@ nav{
 }
 
 /* Aquí comienzan los estilos de la presentación */
-
 #presentación{
     display: grid;
     grid-template-columns: 1fr 3fr;
@@ -154,8 +179,6 @@ nav{
     font-size: 3rem;
     text-justify: right;
     padding: 0%;
-    
-    
 }
 
 #somosA {
@@ -184,6 +207,7 @@ nav{
     margin-right: 10%;
 }
 /* aquí terminan los estilos de la presentación */
+
 #servicios{
     height: 28rem;
     width: 100%;
@@ -197,8 +221,16 @@ nav{
     width: 25%;
     height: 28rem;
     margin-top: 1.25rem;
-    margin-left: 1.25rem;
+    margin-left: 3.125rem;
     text-align: left;
+}
+
+.cajaServicios h2{
+    margin-left: .4375rem;
+}
+
+.cajaServicios p{
+    margin-left: .4375rem;
 }
 
 img {
@@ -215,7 +247,7 @@ img {
 .comentario {
     font-family:'Inria Sans', sans-serif;
     font-size: 1.4375rem;
-   
+    margin-right: 1.875rem;
 }
 
 /*Aquí empieza la parte de equipo/reseñas*/
@@ -251,7 +283,7 @@ img {
     justify-content: space-evenly;
 }
 
-.quieneSomosCajaColumna{
+.quienesSomosCajaColumna{
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -274,7 +306,6 @@ img {
     margin-left: .9375rem;
     margin-top: .375rem;
     justify-content: center;
-    
 }
 
 .quienesSomosPersona p{
@@ -320,7 +351,6 @@ img {
     margin-top: .1875rem;
 }
 
-
 #resenasContenedor{
     width: 50%;
     height: 23.125rem;
@@ -346,4 +376,11 @@ footer{
     height: 8.5625rem;
     width: 100%;
     background-color: lightskyblue;
+}
+
+@media (max-width:22.5rem){
+    #botonNavegador1{
+        height: 3.125rem;
+        width: 3.125rem;
+    }
 }

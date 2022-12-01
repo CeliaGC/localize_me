@@ -8,15 +8,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Localize-me</title>
 </head>
+
 <body>
-    <nav>
-        <div id="marcoNavegador">
-            <img src="./archivos/Logos/logo navegador.png" alt="localize-me, logo del navegador" id="logoNavegador">
-                <div class="botonNavegador1"> <p class="textoNavegador">nuestros servicios</p> </div>
-                <div class="botonNavegador2"> <p class="textoNavegador">quienes somos</p> </div>
-                <div class="botonNavegador2"> <p class="textoNavegador" id="contactoNavegador">contacto</p> </div>
-                <div class="botonNavegador3"> <img id="imagenBarraBusqueda"></div>
-        </div>
+
+    <nav id="navegador">
+        <ul id="marcoNavegador">
+            <li><img id="logoNavegador" src="./archivos/Logos/logo navegador.png" alt="Logo navegador" ></li>
+            <li id="botonNavegador1"> <a href="#">Nuestros servicios</a></li>
+            <li class="botonNavegador2"> <a href="#">Quienes somos</a></li>
+            <li class="botonNavegador2"> <a href="#" id="contacto">Contacto</a></li>
+            <li id="botonNavegador3"> <a href="#"><img src="./archivos/iconos/icons8-búsqueda-64.png" alt=""></a></li>
+            <span class="btnMenu">
+                <img src="./archivos/iconos/icons8-menú-100.png" alt="iconoHamburguesa">
+            </span>
+        </ul>
     </nav>
 
     <div id="carrusel"></div>
@@ -37,12 +42,13 @@
                 <p >tu negocio on-line</p>
             </div>
     </article>
+
     <!--inicio de servicio-->
     <article id="servicios">
         <div class="cajaServicios">
             <img id="comercio" src="/archivos/Foto servicios/e-commers.png" alt="comercio">
             <br>
-            <h2 class="servicio">E-Commers</h2>
+            <h2 class="servicio">E-Commerce</h2>
             <br>
             <p class="comentario"> Ponemos en contacto tu <br>PYME con sus clientes potenciales en la web</p>
         </div>
@@ -69,14 +75,15 @@
         </div>
     </article>
 <!---fin de servicio-->
+
     <div id="equipoResenas">
         <div id="quienesSomosContenedor">
             <div id="quienesSomosTitulo"><h3 id="quienesSomosH3">Quienes Somos</h3></div>
             <div id="quienesSomosCaja">
-                <div class="quieneSomosCajaColumna">
+                <div class="quienesSomosCajaColumna">
                     <div class="quienesSomosPersona">
                         <div>
-                            <h1 class="QuienesSomosPersonaTitulo">Celia</h1>
+                            <h1>Celia</h1>
                             <br>
                             <p>Chief execute officer (CEO)</p>
                         </div>
@@ -91,7 +98,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="quieneSomosCajaColumna">
+                <div class="quienesSomosCajaColumna">
                     <div class="quienesSomosPersona">
                         <div>
                             <h1>Paola</h1>
@@ -117,7 +124,7 @@
         </div>
     </div>
 
-    <div id="equipoResenas"></div>
     <footer></footer>
+
 </body>
 </html>
