@@ -151,12 +151,8 @@ top:5.3125rem;
 }
 
 /* Aquí comienzan los estilos de la presentación */
-<<<<<<< HEAD
 
 #presentacion{
-=======
-#presentación{
->>>>>>> 88181688515a856e621738fe7b83a91e7cee89e6
     display: grid;
     grid-template-columns: 1fr 3fr;
     grid-template-rows: 1fr 1fr 1fr;
@@ -543,7 +539,6 @@ footer{
     font-family: 'Inria Sans';
 }
 
-<<<<<<< HEAD
 
 @media (max-width: 22.5rem) {
 
@@ -717,6 +712,3 @@ footer{
 
 }
 
-=======
-/*Aquí empieza el @media para tamaño movil*/
->>>>>>> 88181688515a856e621738fe7b83a91e7cee89e6
