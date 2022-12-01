@@ -369,18 +369,122 @@ img {
     text-align: center;
     padding-top: .625rem;
 }
-
 /*Aqui acaba equipo/reseña*/
 
+/*Aqui empieza el footer*/
 footer{
     height: 8.5625rem;
-    width: 100%;
     background-color: lightskyblue;
+    display: flex;
 }
 
-@media (max-width:22.5rem){
-    #botonNavegador1{
-        height: 3.125rem;
-        width: 3.125rem;
-    }
+.item-1{
+    background-color: #1D3354;
+    width: 33%;
+    height :100%;
+    display: grid;
+    grid-template-columns: 15% 35% 15% 35%;
+    grid-template-rows: 40% 60%;
 }
+.icons {
+    width: 1.875rem;
+    height: 1.875rem;
+    padding: 2%;
+}
+.caja1{
+    grid-column: 1/5;
+}
+.caja2{
+    display: flex;
+    flex-direction: column ;
+    align-items:flex-end ;
+}
+.caja3{
+    display: flex;
+    align-items: flex-start;
+}
+.caja4{
+    display: flex;
+    flex-direction: column ;
+    align-items: flex-end;
+}
+.caja5{
+    display: flex;
+    align-items: flex-start;
+}
+.item-2{
+    background-color: #1D3354;
+    width: 33%;
+    height :100%;
+    display: grid;
+    grid-template-columns: 43% 57%;
+    grid-template-rows: 40% 60%;
+}
+.caja6{
+    grid-column: 1/3;
+}
+.caja7{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+}
+#telefono{
+    padding: 0;
+}
+.caja8{
+    display: flex;
+    justify-content:flex-start;
+}
+.item-3{
+    background-color: #1D3354;
+    width: 33%;
+    height :100%;
+    display: grid;
+    grid-template-columns: 15% 85%;
+    grid-template-rows: 40% 20% 40%;
+}
+.caja9{
+    grid-column: 1/3;
+}
+.caja10{
+    grid-row: 2/4;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.caja11{
+    grid-column: 2/4;
+    display: flex;
+    align-items: flex-start;
+}
+.caja12{
+    grid-column: 2/4;
+    display: flex;
+    flex-direction: row;
+}
+#ins{
+    padding: 0%;
+    margin: 0% 5% 0% 5%;
+}
+#tw{
+    padding: 0%;
+    margin: 0% 5% 0% 0%;
+}
+#pin{
+    padding: 0%;
+    margin: 0% 5% 0% 0%;
+}
+.titulospie {
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-family:'Fredoka One';
+}
+.textopie {
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-family: 'Inria Sans';
+}
+
+/*Aquí empieza el @media para tamaño movil*/
