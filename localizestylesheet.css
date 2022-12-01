@@ -153,7 +153,7 @@ top:5.3125rem;
 }
 
 /* Aquí comienzan los estilos de la presentación */
-#presentación{
+#presentacion{
     display: grid;
     grid-template-columns: 1fr 3fr;
     grid-template-rows: 1fr 1fr 1fr;
@@ -625,77 +625,77 @@ footer{
 /* Aqui acaba el carrusel mobile */
 
 /* Aquí empieza la presentacion mobile */
-#presentacion {
-    height: 19.4375rem;
-    width: 22.5rem;
-    display: flex;
-    flex-direction: column;
-    background-color:#ffffff;
-    justify-content: center;
-    align-content: center;
-    position:relative
-}
+    #presentacion {
+        height: 19.4375rem;
+        width: 22.5rem;
+        display: flex;
+        flex-direction: column;
+        background-color:#ffffff;
+        justify-content: center;
+        align-content: center;
+        position:relative
+    }
 
-#globo {
-    height: 14.4375rem;
-    width: 6.5rem;
-    position: absolute;
-    background-image: url('archivos/Logos/logo\ proyecto.png');
-    background-size: 97%;
-    background-repeat: no-repeat;
-    bottom: 0%;
-    right: 0%;
-    margin:0%;
-    background-position: bottom;
-    opacity: 0.4;
+    #globo {
+        height: 14.4375rem;
+        width: 6.5rem;
+        position: absolute;
+        background-image: url('archivos/Logos/logo\ proyecto.png');
+        background-size: 97%;
+        background-repeat: no-repeat;
+        bottom: 0%;
+        right: 0%;
+        margin:0%;
+        background-position: bottom;
+        opacity: 0.4;
 
-}
+    }
 
-#somos {
-    width: 22.5rem;
-    height: 25%;
-    background-color: rgba(255, 255, 255, 0);
-    color:#467599;
-    font-family: 'Inria Sans';
-    font-size: 1.125rem;
-    text-justify: auto;
-    text-align: center;
-    margin-top: 10%;
-}
+    #somos {
+        width: 22.5rem;
+        height: 25%;
+        background-color: rgba(255, 255, 255, 0);
+        color:#467599;
+        font-family: 'Inria Sans';
+        font-size: 1.125rem;
+        text-justify: auto;
+        text-align: center;
+        margin-top: 0%;
+    }
 
-#somosB {
-    margin-right: 15%;
-}
+    #somosB {
+        margin-right: 15%;
+    }
 
-#nuestraMeta {
-    width: 22.5rem;
-    height: 50%;
-    background-color: rgba(255, 255, 255, 0);
-    color:#467599;
-    font-family: 'Inria Sans';
-    font-size: 1rem;
-    text-justify: auto;
-    text-align: center;
-    margin-top: 15%;
-}
+    #nuestraMeta {
+        width: 22.5rem;
+        height: 50%;
+        background-color: rgba(255, 255, 255, 0);
+        color:#467599;
+        font-family: 'Inria Sans';
+        font-size: 1rem;
+        text-justify: auto;
+        text-align: center;
+        margin-top: 6%;
+    }
 
-#disenamos {
-    width: 22.5rem;
-    height: 25%;
-    background-color: rgba(255, 255, 255, 0);
-    color:#467599;
-    font-family: 'Inria Sans';
-    font-size: 1.125rem;
-    text-align: center;
-    text-justify: auto;
- 
-}
+    #disenamos {
+        width: 22.5rem;
+        height: 25%;
+        background-color: rgba(255, 255, 255, 0);
+        color:#467599;
+        font-family: 'Inria Sans';
+        font-size: 1.125rem;
+        text-align: center;
+        text-justify: auto;
+     
+    }
 
 /* Aqui acaba la presentacion mobile */
 
     #servicios {
         width: 22.5rem;
-        height: 38.1875rem;
+        height: 39.4375rem;
     }
 
     #equipoResenas {
@@ -708,9 +708,32 @@ footer{
         background-color:coral;
         height: 11.5rem;
         display: grid;
-        grid-template-rows: 1fr 2fr 2fr;
-        grid-template-columns: 1fr 1fr;
-        border: 1px solid black;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 1fr 1fr;
     }
 
+    .item-1 {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        height: 100%;
+        width: 100%;
+        size
+
+    }
+
+    .item-2 {
+        height: 100%;
+        width: 100%;
+
+    }
+    
+    .item-3 {
+        height: 100%;
+        width: 100%;
+    }
+
+
+
 }
+
+
