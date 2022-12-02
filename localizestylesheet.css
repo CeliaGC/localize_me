@@ -765,7 +765,7 @@ color: #ffffff;
 /*Aqui empieza apartado Servicios */
     #servicios {
         width: 22.5rem;
-        height: 37.5rem;
+        height: 38.75rem;
         display: flex;
         flex-direction: column;
         }
@@ -800,7 +800,6 @@ color: #ffffff;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    font-weight: bold;
     }
 
     .comentario {
