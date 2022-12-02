@@ -30,9 +30,22 @@ body{
 /*Aquí empieza los estilos del navegador*/
 
 #navegador{
-    width: 100%;
     height: 8.375rem;
-    background: #9ED8DB;
+    width: 100%;
+    background-color: #9ED8DB;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+#marcoNavegador{
+    width: 90%;
+    height: 5.3125rem;
+    background: #E9FFF9;
+    display: flex;
+    flex-direction: row;
+    align-self: center;
 }
 
 #logoNavegador{
@@ -132,7 +145,7 @@ display: block;
 }
 
 /* Aquí comienzan los estilos de la presentación */
-#presentación{
+#presentacion{
     display: grid;
     grid-template-columns: 1fr 3fr;
     grid-template-rows: 1fr 1fr 1fr;
@@ -185,7 +198,7 @@ display: block;
     font-size: 3rem;
     text-align: right;
     padding: 0%;
-    margin-right: 10%;
+    margin-right: 5%;
 }
 /* aquí terminan los estilos de la presentación */
 
@@ -580,9 +593,8 @@ footer{
     }
 
 /* Aqui empieza el navegador mobile */
-  /*Aquí empieza los estilos del navegador*/
 
-#navegador{
+  #navegador{
     width: 100%;
     height: 3.75rem;
     background: #9ED8DB;
@@ -621,8 +633,8 @@ footer{
     border-radius: .125rem; 
     font-family:'Fredoka One';
     text-align: center;
-    margin-top: .375rem;
-    margin-left: -5.625rem;
+    margin-top: 15px;
+    margin-left: -5.3125rem;
     align-items: center;
 }
 
@@ -640,7 +652,7 @@ footer{
     border-radius: .125rem;
     font-family:'Fredoka One';
     text-align: center;
-    margin-top: .375rem;
+    margin-top: 15px;
     align-items: center;
 }
 
@@ -659,7 +671,7 @@ color: #ffffff;
     font-family:'Fredoka One';
     color: #1D3354;
     text-align: center;
-    margin-top: .375rem;
+    margin-top: 15px;
     display: flex;
     flex-direction: row;
 }
@@ -685,12 +697,80 @@ color: #ffffff;
 /* Aqui acaba el carrusel mobile */
 
 /* Aquí empieza la presentacion mobile */
+    #presentacion {
+        height: 19.4375rem;
+        width: 22.5rem;
+        display: flex;
+        flex-direction: column;
+        background-color:#ffffff;
+        justify-content: center;
+        align-content: center;
+        position:relative
+    }
+
+    #globo {
+        height: 14.4375rem;
+        width: 6.5rem;
+        position: absolute;
+        background-image: url('archivos/Logos/logo\ proyecto.png');
+        background-size: 97%;
+        background-repeat: no-repeat;
+        bottom: 0%;
+        right: 0%;
+        margin:0%;
+        background-position: bottom;
+        opacity: 0.4;
+
+    }
+
+    #somos {
+        width: 22.5rem;
+        height: 25%;
+        background-color: rgba(255, 255, 255, 0);
+        color:#467599;
+        font-family: 'Inria Sans';
+        font-size: 1.125rem;
+        text-justify: auto;
+        text-align: center;
+        margin-top: 0%;
+    }
+
+    #somosB {
+        margin-right: 15%;
+    }
+
+    #nuestraMeta {
+        width: 22.5rem;
+        height: 50%;
+        background-color: rgba(255, 255, 255, 0);
+        color:#467599;
+        font-family: 'Inria Sans';
+        font-size: 1rem;
+        text-justify: auto;
+        text-align: center;
+        margin-top: 6%;
+    }
+
+    #disenamos {
+        width: 22.5rem;
+        height: 25%;
+        background-color: rgba(255, 255, 255, 0);
+        color:#467599;
+        font-family: 'Inria Sans';
+        font-size: 1.125rem;
+        text-align: center;
+        text-justify: auto;
+     
+    }
 
 /* Aqui acaba la presentacion mobile */
 
     #servicios {
         width: 22.5rem;
-        height: 38.1875rem;
+        height: 39.4375rem;
+        display: flex;
+        flex-direction: column;
+    
     }
 
     #equipoResenas {
@@ -703,9 +783,42 @@ color: #ffffff;
         background-color:coral;
         height: 11.5rem;
         display: grid;
-        grid-template-rows: 1fr 2fr 2fr;
-        grid-template-columns: 1fr 1fr;
-        border: 1px solid black;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 1fr 1fr;
     }
 
+    .item-1 {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        height: 100%;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 15% 30% 10% 45%;
+    }
+
+    .caja4 {
+        align-items: flex-start;
+
+    }
+
+
+    .item-2 {
+        height: 100%;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 30% 70%;
+
+    }
+    
+    .item-3 {
+        height: 100%;
+        width: 100%;
+        display: grid;
+        grid-template-rows: 30% 35% 35%;
+    }
+
+
+
 }
+
+
