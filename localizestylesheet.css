@@ -206,7 +206,7 @@ top:5.3125rem;
     font-size: 3rem;
     text-align: right;
     padding: 0%;
-    margin-right: 10%;
+    margin-right: 5%;
 }
 /* aquí terminan los estilos de la presentación */
 
@@ -696,6 +696,9 @@ footer{
     #servicios {
         width: 22.5rem;
         height: 39.4375rem;
+        display: flex;
+        flex-direction: column;
+    
     }
 
     #equipoResenas {
@@ -717,19 +720,29 @@ footer{
         grid-column-end: 3;
         height: 100%;
         width: 100%;
-        size
+        display: grid;
+        grid-template-columns: 15% 30% 10% 45%;
+    }
+
+    .caja4 {
+        align-items: flex-start;
 
     }
+
 
     .item-2 {
         height: 100%;
         width: 100%;
+        display: grid;
+        grid-template-columns: 30% 70%;
 
     }
     
     .item-3 {
         height: 100%;
         width: 100%;
+        display: grid;
+        grid-template-rows: 30% 35% 35%;
     }
 
 
