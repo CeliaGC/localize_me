@@ -28,23 +28,11 @@ body{
 }
 
 /*Aquí empieza los estilos del navegador*/
-#navegador{
-    height: 8.375rem;
-    width: 100%;
-    background-color: #9ED8DB;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-}
 
-#marcoNavegador{
-    width: 90%;
-    height: 5.3125rem;
-    background: #E9FFF9;
-    display: flex;
-    flex-direction: row;
-    align-self: center;
+#navegador{
+    width: 100%;
+    height: 8.375rem;
+    background: #9ED8DB;
 }
 
 #logoNavegador{
@@ -53,6 +41,10 @@ body{
 
 #navegador ul{
     list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
 }
 
 #navegador li{
@@ -60,7 +52,6 @@ body{
     text-align: center;
     font-size: 1.375rem;
 }
-
 
 #navegador li a{
     text-decoration: none;
@@ -75,13 +66,13 @@ body{
 #botonNavegador1{
     width: 11.75rem;
     height: 4.125rem;
-    background-color: transparent;
+    background-color: #E9FFF9;
     border: .1875rem solid #1D3354;
     border-radius: .625rem; 
     font-family:'Fredoka One';
     text-align: center;
     margin-top: .375rem;
-    margin-left: 12.5rem;
+    align-items: center;
 }
 
 #botonNavegador1:hover{
@@ -93,18 +84,16 @@ color: #ffffff;
 .botonNavegador2{
 width: 11.75rem;
 height: 4.125rem;
-background-color: transparent;
+background-color: #E9FFF9;
 border: .1875rem solid #1D3354;
 border-radius: .625rem; 
 font-family:'Fredoka One';
 text-align: center;
 margin-top: .375rem;
 margin-left: .625rem;
+align-items: center;
 }
 
-#contacto{
-margin-top: .8125rem;
-}
 
 .botonNavegador2:hover{
 background-color: #FF6469;
@@ -114,7 +103,7 @@ color: #ffffff;
 #botonNavegador3{
 width: 28.125rem;
 height: 4.125rem;
-background-color: transparent;
+background-color: #E9FFF9;
 border: .1875rem solid #1D3354;
 border-radius: .625rem; 
 font-family:'Fredoka One';
@@ -134,16 +123,6 @@ display: block;
 
 }
 
-.btnMenu{
-height: 1.25rem ;
-width: 1.25rem;
-cursor: pointer;
-display: none;
-}
-
-ul.show{
-top:5.3125rem;
-}
 /*Aquí terminan los estilos del navegador*/
 
 #carrusel{
@@ -601,60 +580,101 @@ footer{
     }
 
 /* Aqui empieza el navegador mobile */
+  /*Aquí empieza los estilos del navegador*/
 
-    nav {
-        width: 22.5rem;
-        height: 73px;
-    }
+#navegador{
+    width: 100%;
+    height: 3.75rem;
+    background: #9ED8DB;
 
-    #marcoNavegador{
-        width: 22.5rem;
-        height: 4.5625rem;
-        background: #E9FFF9;
-        display: flex;
-        flex-direction: row;
-    }
+}
 
-    #logoNavegador{
-        width: 9.9375rem;
-        height: 2.0625rem;
-    }
+#logoNavegador{
+    display: none;
+}
+#navegador ul{
+    padding: none;
+}
 
-    .botonNavegador1{
-        width: 0;
-        height: 0;
-  
-    }
-    
-    .botonNavegador2{
-        width: 0;
-        height: 0;
-      
-    }
-    
-    .botonNavegador3{
-        width: 0;
-        height: 0;
-      
-    }
-    
-    #imagenBarraBusqueda{
-        width: 0;
-        height: 0;
-      
-    }
-    
-    .textoNavegador{
-        width: 0;
-        height: 0;
-      
-    }
-    
-    #contactoNavegador{
-        width: 0;
-        height: 0;
-      
-    }
+
+#navegador li{
+    font-family:'Fredoka One';
+    text-align: center;
+    font-size: .625rem;
+}
+
+#navegador li a{
+    text-decoration: none;
+    display: block;
+    color: #1D3354;
+}
+
+#navegador li a:hover{
+    color: white;
+}
+
+#botonNavegador1{
+    width: 3.75rem;
+    height: 3.125rem;
+    background-color: #E9FFF9;
+    border: .1875rem solid #1D3354;
+    border-radius: .125rem; 
+    font-family:'Fredoka One';
+    text-align: center;
+    margin-top: .375rem;
+    margin-left: -5.625rem;
+    align-items: center;
+}
+
+#botonNavegador1:hover{
+    background-color: #FF6469;
+    color: #ffffff;
+
+}
+
+.botonNavegador2{
+    width:  3.75rem;
+    height: 3.125rem;
+    background-color: #E9FFF9;
+    border: .1875rem solid #1D3354;
+    border-radius: .125rem;
+    font-family:'Fredoka One';
+    text-align: center;
+    margin-top: .375rem;
+    align-items: center;
+}
+
+
+.botonNavegador2:hover{
+background-color: #FF6469;
+color: #ffffff;
+}
+
+#botonNavegador3{
+    width:  3.75rem;
+    height: 3.125rem;
+    background-color: #E9FFF9;
+    border: .1875rem solid #1D3354;
+    border-radius: .125rem;
+    font-family:'Fredoka One';
+    color: #1D3354;
+    text-align: center;
+    margin-top: .375rem;
+    display: flex;
+    flex-direction: row;
+}
+
+#botonNavegador3:hover{
+    background-color: #FF6469;
+    color: #ffffff;
+    display: block;
+
+}
+
+.navegadorIconoBusqueda{
+    height: 2.8125rem;
+    width: 2.8125rem;
+}
 /* Aqui acaba el navegador mobile */
 
 /* Aqui empieza el carrusel mobile */
@@ -662,75 +682,9 @@ footer{
         width: 22.5rem;
         height: 6.5625rem;
     }
-
 /* Aqui acaba el carrusel mobile */
 
 /* Aquí empieza la presentacion mobile */
-#presentacion {
-    height: 19.4375rem;
-    width: 22.5rem;
-    display: flex;
-    flex-direction: column;
-    background-color:#ffffff;
-    justify-content: center;
-    align-content: center;
-    position:relative
-}
-
-#globo {
-    height: 14.4375rem;
-    width: 6.5rem;
-    position: absolute;
-    background-image: url('archivos/Logos/logo\ proyecto.png');
-    background-size: 97%;
-    background-repeat: no-repeat;
-    bottom: 0%;
-    right: 0%;
-    margin:0%;
-    background-position: bottom;
-    opacity: 0.4;
-
-}
-
-#somos {
-    width: 22.5rem;
-    height: 25%;
-    background-color: rgba(255, 255, 255, 0);
-    color:#467599;
-    font-family: 'Inria Sans';
-    font-size: 1.125rem;
-    text-justify: auto;
-    text-align: center;
-    margin-top: 10%;
-}
-
-#somosB {
-    margin-right: 15%;
-}
-
-#nuestraMeta {
-    width: 22.5rem;
-    height: 50%;
-    background-color: rgba(255, 255, 255, 0);
-    color:#467599;
-    font-family: 'Inria Sans';
-    font-size: 1rem;
-    text-justify: auto;
-    text-align: center;
-    margin-top: 15%;
-}
-
-#disenamos {
-    width: 22.5rem;
-    height: 25%;
-    background-color: rgba(255, 255, 255, 0);
-    color:#467599;
-    font-family: 'Inria Sans';
-    font-size: 1.125rem;
-    text-align: center;
-    text-justify: auto;
- 
-}
 
 /* Aqui acaba la presentacion mobile */
 
