@@ -23,7 +23,6 @@
 
 body{
     width: 100%;
-    background-color: lightseagreen;
     height: 132.375rem;
 }
 
@@ -202,6 +201,7 @@ display: block;
 }
 /* aquí terminan los estilos de la presentación */
 
+/*Aqui empieza apartado servicios */
 #servicios{
     height: 28rem;
     width: 100%;
@@ -285,6 +285,8 @@ img {
     font-size: 1.4375rem;
     margin-right: 1.875rem;
 }
+/*Aqui termina apartado servicios*
+
 /*Aquí empieza la parte de equipo/reseñas*/
 #equipoResenas{
     display: flex;
@@ -385,7 +387,7 @@ img {
     margin-left: .3125rem;
     margin-top: .1875rem;
 }
-
+/*Aqui empieza el apartado reseñas */
 #resenasContenedor{
     width: 50%;
     height: 23.125rem;
@@ -455,6 +457,7 @@ img {
     margin-top: .3125rem;
     margin-left: .3125rem;
 }
+/*Aqui acaba apartado reseñas*/
 /*Aqui acaba equipo/resena*/
 
 /*Aqui empieza el footer*/
@@ -528,7 +531,6 @@ footer{
     display: grid;
     grid-template-columns: 15% 85%;
     grid-template-rows: 40% 20% 40%;
-
 }
 
 .caja9{
@@ -588,7 +590,7 @@ footer{
     }
 
     body {
-        width: 22.5rem;
+        width: 100%;
         height: 100rem;
     }
 
@@ -600,14 +602,12 @@ footer{
     background: #9ED8DB;
 
 }
-
 #logoNavegador{
     display: none;
 }
 #navegador ul{
     padding: none;
 }
-
 
 #navegador li{
     font-family:'Fredoka One';
@@ -630,11 +630,10 @@ footer{
     height: 3.125rem;
     background-color: #E9FFF9;
     border: .1875rem solid #1D3354;
-    border-radius: .125rem; 
     font-family:'Fredoka One';
     text-align: center;
     margin-top: 15px;
-    margin-left: -5.3125rem;
+    margin-left: -1.875rem;
     align-items: center;
 }
 
@@ -649,7 +648,6 @@ footer{
     height: 3.125rem;
     background-color: #E9FFF9;
     border: .1875rem solid #1D3354;
-    border-radius: .125rem;
     font-family:'Fredoka One';
     text-align: center;
     margin-top: 15px;
@@ -667,7 +665,6 @@ color: #ffffff;
     height: 3.125rem;
     background-color: #E9FFF9;
     border: .1875rem solid #1D3354;
-    border-radius: .125rem;
     font-family:'Fredoka One';
     color: #1D3354;
     text-align: center;
@@ -765,60 +762,284 @@ color: #ffffff;
 
 /* Aqui acaba la presentacion mobile */
 
+/*Aqui empieza apartado Servicios */
     #servicios {
         width: 22.5rem;
-        height: 39.4375rem;
+        height: 37.5rem;
         display: flex;
         flex-direction: column;
+        }
+
+    .cajaServicios {
+    width: 100%;
+    height: 28rem;
+    margin-top: 1.25rem;
+    margin-left: 1.25rem;
+    text-align: left;
+    display: flex;
+    }
+
+    img {
+    height: 5.625rem;
+    width: 5.625rem; 
+    position: flex;
+    justify-content: flex-end;
+    }
+
+    .Descripcion {
+    display:flex;
+    flex-direction: row;
+    align-self: flex-start; 
+    align-content: space-around;
+    justify-content: baseline;
+    }
+
+    .servicio {
+    font-family:'Inria Sans', sans-serif;
+    font-size: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    font-weight: bold;
+    }
+
+    .comentario {
+    font-family:'Inria Sans', sans-serif;
+    font-size: .9375rem;
+    display: flex;
+    flex-direction: column;
+    }
+
+    .cajaServiciosTextoResponsive br{
+        display: none;
+    }
+/*Aqui acaba apartado servicios */
+
+/*Aquí empieza el apartado de quienes somos y reseñas mobile*/
+
+#equipoResenas{
+    width: 22.5rem;
+    height: 40rem;
+    display: flex;
+    flex-direction: column;
     
-    }
+}
+/*Aqui empieza apartado quienes somos */
+#quienesSomosContenedor{
+    width: 100%;
+    height: 22.5rem;
+    background-color: #FF6469;
+}
+#quienesSomosTitulo{
+    width: 100%;
+    height: 1.875rem;
+    background-color: #9ED8DB;
+}
 
-    #equipoResenas {
-        width: 22.5rem;
-        height: 20.625rem;
-    }
+#quienesSomosH3{
+    font-family: 'Fredoka One';
+    font-size: 1.25rem;
+    color: #1d3354;
+    text-align: center;
+    margin-top: -0.3125rem;
+}
 
-    footer {
-        width: 22.5rem;
-        background-color:coral;
-        height: 11.5rem;
-        display: grid;
-        grid-template-columns: 50% 50%;
-        grid-template-rows: 1fr 1fr;
-    }
+#quienesSomosCaja{
+    width: 100%;
+    height: 21.25rem;
+    display: flex;
+    flex-direction: row nowrap;
+    justify-content: space-evenly;
+}
 
-    .item-1 {
-        grid-column-start: 1;
-        grid-column-end: 3;
-        height: 100%;
-        width: 100%;
-        display: grid;
-        grid-template-columns: 15% 30% 10% 45%;
-    }
+.quienesSomosCajaColumna{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
 
-    .caja4 {
-        align-items: flex-start;
-
-    }
-
-
-    .item-2 {
-        height: 100%;
-        width: 100%;
-        display: grid;
-        grid-template-columns: 30% 70%;
-
-    }
-    
-    .item-3 {
-        height: 100%;
-        width: 100%;
-        display: grid;
-        grid-template-rows: 30% 35% 35%;
-    }
-
-
+.quienesSomosPersona{
+    width: 10rem;
+    height: 8.125rem;
+    background-color: white;
+    border-radius: .625rem;
+    display: flex;
+    flex: row nowrap;
 
 }
 
+.quienesSomosPersona h1{
+    font-family: 'Fredoka One';
+    color: #1D3354;
+    font-size: 1.25rem;
+    margin-left: .9375rem;
+    margin-top: .375rem;
+    justify-content: center;
+}
 
+.quienesSomosPersona p{
+    font-family: 'Inria Sans';
+    color: #1D3354;
+    font-size: .9375rem;
+    justify-content: center;
+    margin-left: .9375rem;
+}
+
+.quienesSomosPersona br{
+    display: none;
+}
+
+#fotoCelia{
+    height: 4.375rem;
+    width: 4.375rem;
+    margin-right: .3125rem;
+    margin-top: .1875rem;
+}
+
+#fotoNohely{
+    height: 4.375rem;
+    width: 4.375rem;
+    border-radius: 150%;
+    margin-left: .3125rem;
+    margin-top: .1875rem;
+}
+
+#fotoPaola{
+    height: 4.375rem;
+    width: 4.375rem;
+    background-size: cover;
+    background-position: center;
+    margin-right: .3125rem;
+    margin-top: .1875rem;
+}
+
+#fotoMarta{
+    height: 4.375rem;
+    width: 4.375rem;
+    border-radius: 150%;
+    background-size: cover;
+    background-position: center;
+    margin-left: .3125rem;
+    margin-top: .1875rem;
+}
+/*Aqui acaba la parte de quienes somos mobile*/
+
+/*Aqui empieza apartado reseñas */
+#resenasContenedor{
+    width: 100%;
+    height: 21.875rem;
+    background-color: #FF6469;
+}
+
+#resenasCaja{
+    width: 100%;
+    height: 1.875rem;
+    background-color: #9ED8DB;
+}
+
+#resenasTitulo{
+    font-size: 1.25rem;
+}
+
+#quienesSomosCaja{
+    width: 100%;
+    height: 19.625rem;
+    display: flex;
+    flex-direction: row nowrap;
+    
+}
+
+.resenaCajaComentario{
+    width: 10rem;
+    height: 6.25rem;
+    background-color: white;
+    border-radius: .625rem;
+    display: flex;
+    flex: row nowrap;
+    font-family: 'Inria Sans';
+    margin-top: -3.125rem;
+}
+
+.resenaPersona p{
+    font-family: 'Inria Sans';
+    color: #1D3354;
+    font-size: .9375rem;
+    flex-direction: column;
+    align-self: center;
+    flex-wrap: wrap ;
+    margin-left: .9375rem;
+}
+
+.medalla{
+    display: inline-block;
+    flex-direction: column;
+    padding: .3125rem;
+    margin-top: .3125rem;
+    margin-left: .3125rem;
+}
+
+.medalla img{
+    height: 1.25rem;
+    width: 20px;
+}
+/*Aqui acaba reseñas mobile*/
+/*Aqui acaba apartado Quienessomos reseñas */
+
+/*Aqui empieza el footer mobile*/
+footer {
+    width: 22.5rem;
+    background-color:coral;
+    height: 11.5rem;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 1fr 1fr;
+}
+
+.item-1 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 15% 30% 10% 45%;
+}
+
+.item-1 h3{
+    font-size: 1.25rem;
+}
+
+.caja4 {
+    align-items: flex-start;
+    margin-top: -1.25rem;
+}
+
+
+.item-2 {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 30% 70%;
+
+}
+
+.item-2 h3{
+    font-size: 1.25rem;
+}
+
+.item-3 {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-rows: 30% 35% 35%;
+}
+
+.item-3 h3{
+    font-size: 1.25rem;
+}
+
+.caja7, .caja8 {
+    margin-top: -1.25rem;
+}
+/*Aqui acaba el footer mobile*/
+
+}
