@@ -24,9 +24,11 @@
 body{
     width: 100%;
     background-color: lightseagreen;
+    height: 132.375rem;
 }
 
 /*Aquí empieza los estilos del navegador*/
+
 #navegador{
     height: 8.375rem;
     width: 100%;
@@ -52,12 +54,16 @@ body{
 
 #navegador ul{
     list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
 }
 
 #navegador li{
     font-family:'Fredoka One';
     text-align: center;
-    font-size: 1.5625rem;
+    font-size: 1.375rem;
 }
 
 #navegador li a{
@@ -73,13 +79,13 @@ body{
 #botonNavegador1{
     width: 11.75rem;
     height: 4.125rem;
-    background-color: transparent;
+    background-color: #E9FFF9;
     border: .1875rem solid #1D3354;
     border-radius: .625rem; 
     font-family:'Fredoka One';
     text-align: center;
     margin-top: .375rem;
-    margin-left: 12.5rem;
+    align-items: center;
 }
 
 #botonNavegador1:hover{
@@ -91,18 +97,16 @@ color: #ffffff;
 .botonNavegador2{
 width: 11.75rem;
 height: 4.125rem;
-background-color: transparent;
+background-color: #E9FFF9;
 border: .1875rem solid #1D3354;
 border-radius: .625rem; 
 font-family:'Fredoka One';
 text-align: center;
 margin-top: .375rem;
 margin-left: .625rem;
+align-items: center;
 }
 
-#contacto{
-margin-top: .8125rem;
-}
 
 .botonNavegador2:hover{
 background-color: #FF6469;
@@ -112,7 +116,7 @@ color: #ffffff;
 #botonNavegador3{
 width: 28.125rem;
 height: 4.125rem;
-background-color: transparent;
+background-color: #E9FFF9;
 border: .1875rem solid #1D3354;
 border-radius: .625rem; 
 font-family:'Fredoka One';
@@ -132,16 +136,6 @@ display: block;
 
 }
 
-.btnMenu{
-height: 1.25rem ;
-width: 1.25rem;
-cursor: pointer;
-display: none;
-}
-
-ul.show{
-top:5.3125rem;
-}
 /*Aquí terminan los estilos del navegador*/
 
 #carrusel{
@@ -151,11 +145,11 @@ top:5.3125rem;
 }
 
 /* Aquí comienzan los estilos de la presentación */
-#presentación{
+#presentacion{
     display: grid;
     grid-template-columns: 1fr 3fr;
     grid-template-rows: 1fr 1fr 1fr;
-    height: 35.3125rem;
+    height: 39rem;
     background-color: rgb(255, 255, 255);
     padding: 0%;
     
@@ -204,7 +198,7 @@ top:5.3125rem;
     font-size: 3rem;
     text-align: right;
     padding: 0%;
-    margin-right: 10%;
+    margin-right: 5%;
 }
 /* aquí terminan los estilos de la presentación */
 
@@ -250,6 +244,47 @@ img {
     margin-right: 1.875rem;
 }
 
+#servicios{
+    height: 28rem;
+    width: 100%;
+    background-color: #E9FFF9;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+}
+
+.cajaServicios{
+    width: 25%;
+    height: 28rem;
+    margin-top: 1.25rem;
+    margin-left: 3.125rem;
+    text-align: left;
+}
+
+.cajaServicios h2{
+    margin-left: .4375rem;
+}
+
+.cajaServicios p{
+    margin-left: .4375rem;
+}
+
+img {
+    height: auto;
+    max-width: 100%;  
+    position: flex;
+}
+
+.servicio {
+    font-family:'Inria Sans', sans-serif;
+    font-size: 1.5rem;
+}
+
+.comentario {
+    font-family:'Inria Sans', sans-serif;
+    font-size: 1.4375rem;
+    margin-right: 1.875rem;
+}
 /*Aquí empieza la parte de equipo/reseñas*/
 #equipoResenas{
     display: flex;
@@ -488,14 +523,17 @@ footer{
 }
 .item-3{
     background-color: #1D3354;
-    width: 33%;
+    width: 32.3125rem;
     height :100%;
     display: grid;
     grid-template-columns: 15% 85%;
     grid-template-rows: 40% 20% 40%;
+
 }
+
 .caja9{
     grid-column: 1/3;
+    padding-right: 45%;
 }
 .caja10{
     grid-row: 2/4;
@@ -538,4 +576,249 @@ footer{
     font-family: 'Inria Sans';
 }
 
-/*Aquí empieza el @media para tamaño movil*/
+@media (max-width: 22.5rem) {
+
+    * {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        text-decoration: none;
+        border: none;
+        outline: none;
+    }
+
+    body {
+        width: 22.5rem;
+        height: 100rem;
+    }
+
+/* Aqui empieza el navegador mobile */
+
+  #navegador{
+    width: 100%;
+    height: 3.75rem;
+    background: #9ED8DB;
+
+}
+
+#logoNavegador{
+    display: none;
+}
+#navegador ul{
+    padding: none;
+}
+
+
+#navegador li{
+    font-family:'Fredoka One';
+    text-align: center;
+    font-size: .625rem;
+}
+
+#navegador li a{
+    text-decoration: none;
+    display: block;
+    color: #1D3354;
+}
+
+#navegador li a:hover{
+    color: white;
+}
+
+#botonNavegador1{
+    width: 3.75rem;
+    height: 3.125rem;
+    background-color: #E9FFF9;
+    border: .1875rem solid #1D3354;
+    border-radius: .125rem; 
+    font-family:'Fredoka One';
+    text-align: center;
+    margin-top: 15px;
+    margin-left: -1.875rem;
+    align-items: center;
+}
+
+#botonNavegador1:hover{
+    background-color: #FF6469;
+    color: #ffffff;
+
+}
+
+.botonNavegador2{
+    width:  3.75rem;
+    height: 3.125rem;
+    background-color: #E9FFF9;
+    border: .1875rem solid #1D3354;
+    border-radius: .125rem;
+    font-family:'Fredoka One';
+    text-align: center;
+    margin-top: 15px;
+    align-items: center;
+}
+
+
+.botonNavegador2:hover{
+background-color: #FF6469;
+color: #ffffff;
+}
+
+#botonNavegador3{
+    width:  3.75rem;
+    height: 3.125rem;
+    background-color: #E9FFF9;
+    border: .1875rem solid #1D3354;
+    border-radius: .125rem;
+    font-family:'Fredoka One';
+    color: #1D3354;
+    text-align: center;
+    margin-top: 15px;
+    display: flex;
+    flex-direction: row;
+}
+
+#botonNavegador3:hover{
+    background-color: #FF6469;
+    color: #ffffff;
+    display: block;
+
+}
+
+.navegadorIconoBusqueda{
+    height: 2.8125rem;
+    width: 2.8125rem;
+}
+/* Aqui acaba el navegador mobile */
+
+/* Aqui empieza el carrusel mobile */
+    #carrusel {
+        width: 22.5rem;
+        height: 6.5625rem;
+    }
+/* Aqui acaba el carrusel mobile */
+
+/* Aquí empieza la presentacion mobile */
+    #presentacion {
+        height: 19.4375rem;
+        width: 22.5rem;
+        display: flex;
+        flex-direction: column;
+        background-color:#ffffff;
+        justify-content: center;
+        align-content: center;
+        position:relative
+    }
+
+    #globo {
+        height: 14.4375rem;
+        width: 6.5rem;
+        position: absolute;
+        background-image: url('archivos/Logos/logo\ proyecto.png');
+        background-size: 97%;
+        background-repeat: no-repeat;
+        bottom: 0%;
+        right: 0%;
+        margin:0%;
+        background-position: bottom;
+        opacity: 0.4;
+
+    }
+
+    #somos {
+        width: 22.5rem;
+        height: 25%;
+        background-color: rgba(255, 255, 255, 0);
+        color:#467599;
+        font-family: 'Inria Sans';
+        font-size: 1.125rem;
+        text-justify: auto;
+        text-align: center;
+        margin-top: 0%;
+    }
+
+    #somosB {
+        margin-right: 15%;
+    }
+
+    #nuestraMeta {
+        width: 22.5rem;
+        height: 50%;
+        background-color: rgba(255, 255, 255, 0);
+        color:#467599;
+        font-family: 'Inria Sans';
+        font-size: 1rem;
+        text-justify: auto;
+        text-align: center;
+        margin-top: 6%;
+    }
+
+    #disenamos {
+        width: 22.5rem;
+        height: 25%;
+        background-color: rgba(255, 255, 255, 0);
+        color:#467599;
+        font-family: 'Inria Sans';
+        font-size: 1.125rem;
+        text-align: center;
+        text-justify: auto;
+     
+    }
+
+/* Aqui acaba la presentacion mobile */
+
+    #servicios {
+        width: 22.5rem;
+        height: 39.4375rem;
+        display: flex;
+        flex-direction: column;
+    
+    }
+
+    #equipoResenas {
+        width: 22.5rem;
+        height: 20.625rem;
+    }
+
+    footer {
+        width: 22.5rem;
+        background-color:coral;
+        height: 11.5rem;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    .item-1 {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        height: 100%;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 15% 30% 10% 45%;
+    }
+
+    .caja4 {
+        align-items: flex-start;
+
+    }
+
+
+    .item-2 {
+        height: 100%;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 30% 70%;
+
+    }
+    
+    .item-3 {
+        height: 100%;
+        width: 100%;
+        display: grid;
+        grid-template-rows: 30% 35% 35%;
+    }
+
+
+
+}
+
+
