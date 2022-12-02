@@ -709,10 +709,10 @@ footer{
     footer {
         width: 22.5rem;
         background-color:coral;
-        height: 11.5rem;
+        height: 14.3187rem;
         display: grid;
         grid-template-columns: 50% 50%;
-        grid-template-rows: 1fr 1fr;
+        grid-template-rows: 2fr 1fr;
     }
 
     .item-1 {
@@ -737,6 +737,10 @@ footer{
         grid-template-columns: 30% 70%;
 
     }
+
+    .caja6 {
+        padding-top: 10%;
+    }
     
     .item-3 {
         height: 100%;
@@ -745,8 +749,23 @@ footer{
         grid-template-rows: 30% 35% 35%;
     }
 
+    .caja9 {
+        padding-top: 10%;
+    }
 
+    #calleFalsa {
+        font-size: .75rem;
+        padding-top: 10%;
+        padding-left: 7%;
+    }
 
+    #fb {
+        margin-top: 55%;
+    }
+
+    #casa {
+        margin-top: 15%;
+    }
 }
 
 
